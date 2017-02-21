@@ -16,7 +16,29 @@
     
     <link href"css/video.css" rel="stylesheet">
 
-
+    <!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+	 <style type="text/css">
+        .slider {
+            width: 98%;
+            margin: 0px auto;
+        }
+    
+        .slick-slide {
+          margin: 0px 10px;
+        }
+    
+        .slick-slide img {
+          height: 390px;
+        }
+    
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+      </style>
+      
     <!-- Theme CSS -->
     <link href="css/font.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
@@ -130,47 +152,28 @@
     <!-- filmography Section -->
     <section id="filmography">
         <div class="container">
-            <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>Filmography</h2>
                 </div>
-            </div><br><br/>
-                        <div class="col-lg-offset-0">
 
-<div class="gridWrapper">
-
-        <div class="tile">
-      <div class="tileInner">
-        <img src="img/filmography/Life_2017.jpg" alt="Life"/>
-      </div>
-    </div>
-    
-        <div class="tile">
-      <div class="tileInner">
-        <img src="img/filmography/ModernFamily_2017.jpg" alt="Modern Family"/>
-      </div>
-    </div>
-
-        <div class="tile">
-      <div class="tileInner">
-        <img src="img/filmography/Colony_2017.jpg" alt="Colony"/>
-      </div>
-    </div>
-        
-    <div class="tile">
-      <div class="tileInner">
-        <img src="img/filmography/StrangeMagic_2015.jpg" alt="Strange Magic"/>
-      </div>
-    </div>
-    
-    <div class="tile">
-      <div class="tileInner">
-        <img src="img/filmography/TeenageMutantNinjaTurtles_2014.jpg" alt="Teenage Mutant Ninja Turtles"/>
-      </div>
-    </div>
-    
-            </div>
+      <section class="variable slider">
+        <div>
+          <img src="img/filmography/Life_2017.jpg">
         </div>
+        <div>
+          <img src="img/filmography/ModernFamily_2017.jpg">
+        </div>
+        <div>
+          <img src="img/filmography/Colony_2017.jpg">
+        </div>
+        <div>
+          <img src="img/filmography/StrangeMagic_2015.jpg">
+        </div>
+        <div>
+          <img src="img/filmography/TeenageMutantNinjaTurtles_2014.jpg">
+        </div>
+      </section>
+  
     </section>
 
     <!-- Resume Section -->
@@ -277,6 +280,19 @@
         $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
     </script>
       
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".variable").slick({
+        dots: true,
+        variableWidth: true,
+		slidesToShow: 4,
+        slidesToScroll: 1,
+		autoplay: true,
+  		autoplaySpeed: 2500
+      });
+    });
+  </script>
 </body>
 
 </html>
