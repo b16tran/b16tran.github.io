@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brian Jason Tran — Effects animation for animated feature films.">
+  <title>FX Animation — Brian Jason Tran</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Brian Jason Tran</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav__menu">
+        <ul class="nav__links">
+          <li><a href="synthetic-data.html">Synthetic Data</a></li>
+          <li><a href="fx-animation.html" class="active">FX Animation</a></li>
+          <li><a href="vfx.html">VFX</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="label page-hero__label reveal">Effects Animation</p>
+      <h1 class="heading-xl page-hero__title reveal reveal-delay-1"><span class="gradient-text">FX Animation</span></h1>
+      <p class="body-lg page-hero__subtitle reveal reveal-delay-2" style="text-align: left;">
+        Effects animation and technical direction for award-winning animated feature films — 
+        bringing magical worlds to life through fire, water, cloth, particles, and more.
+      </p>
+    </div>
+  </section>
+
+  <section class="section--compact">
+    <div class="container">
+      <div class="video-embed reveal">
+        <iframe src="https://player.vimeo.com/video/304272394?quality=1080p&autoplay=1&loop=1&muted=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      <p class="body-md text-center mt-40 reveal" style="color:var(--text-tertiary)">FX Animation Demo Reel</p>
+    </div>
+  </section>
+
+  <section class="section" id="films">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="label section__label">Feature Films</p>
+        <h2 class="heading-lg section__title">Filmography</h2>
+      </div>
+      <div class="film-grid">
+        <div class="film-card reveal"><img src="assets/images/work/Encanto_2021.jpg" alt="Encanto" loading="lazy"><div class="film-card__info"><p class="film-card__title">Encanto</p><p class="film-card__role">Effects Animator · 2021</p></div></div>
+        <div class="film-card reveal"><img src="assets/images/work/Raya_2021.jpg" alt="Raya and the Last Dragon" loading="lazy"><div class="film-card__info"><p class="film-card__title">Raya and the Last Dragon</p><p class="film-card__role">Effects Animator · 2021</p></div></div>
+        <div class="film-card reveal"><img src="assets/images/work/Frozen2_2019.jpg" alt="Frozen II" loading="lazy"><div class="film-card__info"><p class="film-card__title">Frozen II</p><p class="film-card__role">Effects Animator · 2019</p></div></div>
+        <div class="film-card reveal"><img src="assets/images/work/SpiesInDisguise_2019.jpg" alt="Spies in Disguise" loading="lazy"><div class="film-card__info"><p class="film-card__title">Spies in Disguise</p><p class="film-card__role">Effects Technical Director · 2019</p></div></div>
+        <div class="film-card reveal"><img src="assets/images/work/WIR2_2018.jpg" alt="Ralph Breaks the Internet" loading="lazy"><div class="film-card__info"><p class="film-card__title">Ralph Breaks the Internet</p><p class="film-card__role">Effects Animator · 2018</p></div></div>
+        <div class="film-card reveal"><img src="assets/images/work/StrangeMagic_2015.jpg" alt="Strange Magic" loading="lazy"><div class="film-card__info"><p class="film-card__title">Strange Magic</p><p class="film-card__role">Technical Resource · 2015</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 1989 – <span id="current-year"></span> Brian Jason Tran</p>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
