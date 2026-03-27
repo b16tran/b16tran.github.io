@@ -47,7 +47,16 @@
     <div class="home-grid">
 
       <a href="synthetic-data.html" class="home-card reveal" id="card-synth">
-        <img src="assets/images/portfolio/grocery/aisle.gif" alt="Synthetic Data" class="home-card__bg" loading="lazy">
+        <img id="synth-bg" src="assets/images/portfolio/grocery/aisle-placeholder.png" alt="Synthetic Data" class="home-card__bg">
+        <script>
+          (function(){
+            var gif = new Image();
+            gif.onload = function(){
+              document.getElementById('synth-bg').src = gif.src;
+            };
+            gif.src = 'assets/images/portfolio/grocery/aisle.gif';
+          })();
+        </script>
         <div class="home-card__overlay"></div>
         <div class="home-card__content">
           <h2 class="home-card__title">Synthetic Data</h2>

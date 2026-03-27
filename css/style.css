@@ -1041,7 +1041,7 @@ img, video {
   justify-content: flex-end;
   aspect-ratio: 16 / 9;
   min-height: auto;
-  background: var(--bg-card);
+  background: #000;
   box-shadow: var(--shadow-card);
   transition: box-shadow var(--transition);
   cursor: pointer;
